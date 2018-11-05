@@ -1,0 +1,453 @@
+body{
+	background:#f7f6ed;
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-family: AcademyC;
+}
+@font-face {
+    font-family: AcademyC;
+    src: url(../fonts/AcademyC.otf);
+}
+@font-face {
+    font-family: AcademyC-italic;
+    src: url(../fonts/AcademyC-Italic.otf);
+}
+@font-face {
+    font-family: AcademyC-bold;
+    src: url(../fonts/AcademyC-Bold.otf);
+}
+/* рамка для сайту*/
+.border_bigger{
+    border:solid;
+    color: #000000;
+    border-width: 2px;
+    margin: 2%;
+}
+.border_less{
+	border:solid;
+	color: #b49d5a;
+    border-width: 1px;
+    margin: 8px;
+}
+/* загальний відсуп - вирівнювання*/
+.container{
+	margin-left: 3%;
+	margin-right: 3%;
+}
+/* header- перший блок сайту*/
+#biogr{
+	margin-bottom: 10%;
+}
+.section2{
+	margin-top: 10%;
+}
+/*пошта і мова сайту розташевання*/
+.highest_end_email{
+	display: flex;
+    justify-content: space-between;
+}
+/*стилі для р*/
+.text_eng_email_p{
+    font-size: 1.1vmax;
+	color: #646362;
+	font-family: "AcademyC";
+	font-style: italic;
+	text-decoration:underline #b49d5a;
+}
+/* загальні розміри картинки Нани*/
+.img_header_little{
+	width: 8vmax;
+	height: 8vmax;
+}
+/*головний заголовок та стилі для всіх інших*/
+.nana{
+	font-size: 4vmax;
+	letter-spacing: 9px;
+	color: #b39c5a;
+	text-align: center;
+	margin-bottom: 1%;
+}
+/*рамка фото Нани*/
+.img_nana{
+	padding: 7px;
+	border: 4px solid #b49d5a;
+	width: 25vmax;
+}
+/*встановлення розташування першого блоку*/
+.justify_tables_header_block{
+	display: grid;
+    grid-template-areas:
+    'first block_p third'
+    'second block_p biography';
+    grid-gap: 5%;
+
+}
+/*перший блок.що складається з 2 підблоків*/
+.first{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 2%;
+	width: 23vmax;
+}
+.text_event_numbers{
+	font-size: 1.5vmax;
+	color: #2f2f2f;
+	margin: 0;
+}
+.june{
+	font-size: 1.5vmax;
+	color: #4d4d4d;
+	margin: 0;
+	margin-left: 1%;
+}
+.soonest_ev{
+	color: #646362;
+	border-top: 1px solid #2b2b2b;
+	border-bottom: 1px solid #2b2b2b;
+	margin : 5px 0; 
+}
+.heading_forum{
+	text-decoration:underline #b49d5a;
+	color: #2b2b2b;
+	padding-top: 3%;
+	font-size: 2.1vmax;
+
+}
+/*стилі пункту Біографія*/
+.biography{
+	margin-top: 13vmax;
+}
+/*текст третього блоку Біогорафія*/
+.text_biography{
+	font-size: 1.2vmax;
+	color: #4d4d4d;
+	margin: 0;
+	text-align: center;
+}
+/*ширина 3 підблоку 1 блоку*/
+.third{
+	width: 30vmax;
+}
+/*---Налагодження меню навігації------------***/
+.biography_justify{
+	float: right;
+	margin:0;
+	padding: 0;
+	opacity: 0.8;
+	margin-top: 10%;
+
+}
+.biography_justify li{
+	display:block;
+	position: static;     
+}
+.biography_justify li a{
+	transition: 1s;
+	float: right;
+	display:inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 30px;
+	font-size: 15px;
+	padding: 0 20px;
+	background: #f2e9e2;
+	color:#676767;
+}
+/* клас для підсвічування активної ссилки*/
+.biography_justify li .biography_color{
+	background: #222;
+	color:#fff;
+}
+ 
+/* Підсвітка наведеного пункта */
+.biography_justify li a:hover{
+	display:inline-block;
+	background: #000;
+	color: white;
+}
+/*зміна класу при скролі*/
+.newid{
+	position: fixed;
+	opacity: 0.8;
+	margin-top: -9%;
+}
+.newid li{
+	display:block;
+	float:left;
+	background:#f2e9e2; 
+
+}
+.newid li a{
+	transition: 1s;
+	display: block;
+    padding:6px;
+    text-decoration: none;
+    color: #252525;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: #f2e9e2;
+    margin-top: 1px;
+}
+.newid li a:hover{
+	display:inline-block;
+	background: #000;
+	color: white;
+}
+/* ------Block 2---------*/
+/*лінії хедінга*/
+.heading_line{
+	margin-top: 5%;
+    background: url(../img/line_heading.png) no-repeat center;
+}
+/*заголовки до нав меню */
+.heading2{
+	font-size: 2.1em;
+	color: #2b2b2b;
+	text-transform: uppercase;
+	text-align: center;	
+}
+/*маленбкий текст під блоками*/
+.text_block2{
+	font-size: 20px;
+	font-family: AcademyC-italic;
+	color: #2b2b2b;
+	text-align: center;
+}
+/* колонки з фотками 2 блок*/
+.blocks_photo{
+	display:grid;
+  	grid-template-columns: auto auto auto;
+}
+
+.mySlides1 img, .mySlides2 img, .mySlides3 img{
+	margin: 0 auto;
+}
+.numbertext {
+	text-align: center;
+}
+
+.prev{
+	text-align: center;
+	margin-left: 45%;
+}
+.block1{
+	margin: 0 auto;
+}
+/*підписи до блоків 2*/
+.h3_block{
+	font-size: 1.3vmax;
+	text-align: center;
+	color: #2b2b2b;
+	text-decoration: underline #b49d5a;
+
+}
+.text_block2{
+	font-size: 1.2vmax;
+	width: 80%;
+	margin:auto;
+}
+.block2 img{
+	margin: 0 40% 100px 44%;
+}
+
+.block2 h1{
+	font-size: 6vmax;
+	text-align: center;
+	color: #2b2b2b;
+	text-decoration: underline #b49d5a;
+	margin: 0;
+	margin-top:5%;
+
+}
+.section3{
+	margin-bottom: 5%;
+}
+/* великий текст під блоком медиа-проекты*/
+.block2 h1 p{
+	font-family: AcademyC;
+	text-align: left;
+	width: 30vmax;
+	display: inline-block;
+	font-size: 0.2em;
+	margin-left: 4%;
+}
+/*----BLOCK 4---*/
+
+/*налагодження гріду для першої частини 4 блоку*/
+.section4_part1{
+	display: grid;
+	grid-template-columns: 70% 25%;
+	grid-gap: 5%;
+}
+
+.h3{
+	font-size: 1.2vmax;
+	text-align: center;
+	color: #2b2b2b;
+	text-transform: uppercase;
+}
+.grid_sec4{
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 2%;
+}
+/*колонки секції 4 */
+.section4_blocks{
+	margin: 2%;	
+}
+/*налагодження стилів колонок 4 секції*/
+.section4_blocks img{
+	border: 2px solid black;
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 13vmax;
+}
+
+/*SECTION4 BLOCK 2*/
+/* два діви з картинкою і текстом*/
+.section4_big_sec_block{
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 5%;
+}
+/* встановлення ширини для фоток*/
+.mySlides2 img, .mySlides1 img, .mySlides3 img{
+	width: 18vmax;
+}
+.book_and_album{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 4%;
+	width: 80%;
+	margin: auto auto 5vmax auto;
+}
+.book{
+	margin: 2%;
+}
+.book img{
+	margin: 2%;
+}
+.leftimg {
+    float:left;  
+}
+.book .h3_block{
+	text-align: left;
+}
+/*BLOCK 5*/
+.logos{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows:auto auto auto ;
+	margin: 50px 0;
+	grid-gap:3vmax;
+	
+}
+.logo_item {
+
+	margin: auto;
+}
+.ceccotti img{	
+	margin-left: 40%;
+}
+#contacts{
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-bottom: 10%;
+}
+#contact_info{
+	margin-bottom: 10%;
+}
+#contact_info p{
+	text-align: center;
+}
+.section5-contacts{
+	margin-top: 10%;
+}
+/*адаптація під менші екрани ( спроба:) )*/
+@media only screen and (max-width: 850px) {
+	.border_bigger{
+    margin: 2vh;
+	}
+	
+	.text_eng_email_p{
+		font-size: 2vmax;
+	}
+	.heading_forum{
+	font-size: 3.9vmax;
+	}
+	.justify_tables_header_block{
+    grid-template-areas:
+    'biography_justify'
+    'first'
+    ' block_p'
+    ' third'
+    'second';
+	}
+	.img_nana {
+    	width: 35vh;
+    	height: 43vh;
+	}
+	.nana{
+	font-size: 3.9vmax;
+	}
+	.text_event_numbers{
+		font-size: 1.5em;
+	}
+	.img_header_little{
+		width: 20.5vh;
+		height: 21vh;
+		margin: 0 5%;
+	}
+	.june{
+		font-size: 1.5em;
+		
+	}
+	.text_biography{
+		font-size: 3vmax;
+	}
+	.blocks_photo{
+	display:grid;
+  	grid-template-columns: auto;
+	}
+	.block2 h1{
+		font-size: 5vmax;
+	}
+	.block2 h1 p{
+	font-size: 0.4em;
+	}
+	.h3_block{
+		font-size: 3vmax;
+	}
+	.section4_part1{
+		grid-template-columns: auto;
+	}
+	.grid_sec4 {
+    grid-template-columns: auto;
+	}
+	.book_and_album{
+	grid-template-columns: auto;
+	}
+	.logos{
+	display: grid;
+	grid-template-columns: auto;
+	}
+	#contacts{
+	grid-template-columns:auto;
+	}
+	#biography_justify li a{
+	padding: 0;
+	font-size: 10px;
+	}
+	#newid li a{
+    font-size: 11.5px;
+	}
+	.mySlides1 img, .mySlides2 img, .mySlides3 img{
+	margin: 0 auto;
+	}
+	.biography{
+	margin-top: 1vmax;
+}
+}
